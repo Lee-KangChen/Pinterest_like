@@ -7,7 +7,7 @@ gem 'devise', '~> 4.2'
 gem 'paperclip', '~> 5.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
-
+gem 'aws-sdk', '~> 2.6', '>= 2.6.36'
 
 
 
@@ -32,8 +32,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
   gem 'sqlite3'
+  gem 'web-console', '~> 2.0'
   gem 'pry'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -42,7 +42,6 @@ end
 
 group :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3'
   gem 'byebug'
 end
 
